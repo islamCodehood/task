@@ -1,10 +1,14 @@
 import React from 'react';
+import RemoveButton from './RemoveButton';
 
 const OutputItemTitle = props => {
     return ( 
-        <h2>
-            {props.value}
-        </h2>
+        <div>
+            <h2>
+                {props.value}
+            </h2>
+            <RemoveButton removeItem={props.removeItem} />
+        </div>
      );
 }
  
