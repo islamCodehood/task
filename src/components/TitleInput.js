@@ -8,11 +8,12 @@ class TitleInput extends Component {
   }
   render() {
     return (
-      <div>
+      <div  className="input-wrapper">
         <input
           type="text"
           id="title-input"
           placeholder="Title"
+          className="input-style"
           onChange={this.handleChange}
           required
         />
