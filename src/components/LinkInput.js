@@ -1,7 +1,7 @@
 import React from "react";
 
-const LinkInput = () => {
-  const handleChange = e => this.props.updateLink(e.target.value);
+const LinkInput = props => {
+  const handleChange = e => props.updateLink(e.target.value);
 
     return (
       <div className="input-wrapper">
