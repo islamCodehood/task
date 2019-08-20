@@ -5,7 +5,11 @@ class OutputList extends Component {
     render() { 
         return ( 
             <ul>
-                <OutputItem />
+                {
+                    this.props.itemsList.map(item => (
+                        <OutputItem title={item.title} link={item.link} summary={item.summary} />
+                    ))
+                }
             </ul>
          );
     }
