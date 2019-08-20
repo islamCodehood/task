@@ -2,7 +2,12 @@ import React, { Component } from 'react';
 import Header from './components/Header'
 import Form from './components/Form'
 import OutputList from './components/OutputList'
-import './App.css';
+import './styles/App.css';
+import './styles/header.css'; 
+import './styles/form.css';
+import './styles/list.css'
+import './styles/media.css';
+ 
 
 class App extends Component {
   state = { 
@@ -25,7 +30,7 @@ class App extends Component {
   removeItem = timestamp => this.setState(prevState => ({
     items: prevState.items.filter(item => item.timestamp !== timestamp)
   }))
-  
+
   render() {
     return (
       <div className="App">
