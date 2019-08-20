@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import TitleInput from './TitleInput'
 import LinkInput from './LinkInput'
 import SummaryInput from './SummaryInput'
+
 class Form extends Component {
     state = { 
         title: "",
@@ -28,9 +29,11 @@ class Form extends Component {
         const linkExpression = /[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)?/gi;
         const regex = new RegExp(linkExpression);
         const timeStamp = new Date().getTime()
+        //check if any input is  empty
         if (!title || !link || !summary) {
             return;
         } 
+        //check for valid url 
         if (!link.match(regex)) {
             alert("Please, Enter a valid link!")
             return
@@ -39,7 +42,7 @@ class Form extends Component {
         this.addTimeStamp(timeStamp)
         this.props.addItem(title, link, summary, timeStamp)
     }
-
+    
     addTimeStamp = timeStamp => this.setState({
         timeStamp,
     })

@@ -26,7 +26,7 @@ class App extends Component {
       items: [item].concat(prevState.items)
     }))
   }
-
+  //remove item by filtering with timestamp
   removeItem = timestamp => this.setState(prevState => ({
     items: prevState.items.filter(item => item.timestamp !== timestamp)
   }))
