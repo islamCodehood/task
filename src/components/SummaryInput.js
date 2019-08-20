@@ -1,17 +1,24 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
 class SummaryInput extends Component {
-    state = {  }
+  state = {};
 
-    handleChange = e => this.props.updateSummary(e.target.value)  
+  handleChange = e => this.props.updateSummary(e.target.value);
 
-    render() { 
-        return ( 
-            <div>
-                <textarea id="summary-input" name="summary" onChange={this.handleChange} placeholder="Summary" required />
-            </div>
-         );
-    }
+  render() {
+    return (
+      <div  className="input-wrapper">
+        <textarea
+          id="summary-input"
+          className="input-style"
+          name="summary"
+          onChange={this.handleChange}
+          placeholder="Summary"
+          required
+        />
+      </div>
+    );
+  }
 }
- 
+
 export default SummaryInput;
