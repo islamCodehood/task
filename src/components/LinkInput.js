@@ -1,24 +1,21 @@
-import React, { Component } from "react";
+import React from "react";
 
-class LinkInput extends Component {
-  state = {};
+const LinkInput = () => {
+  const handleChange = e => this.props.updateLink(e.target.value);
 
-  handleChange = e => this.props.updateLink(e.target.value);
-
-  render() {
     return (
       <div className="input-wrapper">
         <input
           type="url"
           id="link-input"
           className="input-style"
-          onChange={this.handleChange}
+          onChange={handleChange}
           placeholder="Link"
           required
         />
       </div>
     );
-  }
+
 }
 
 export default LinkInput;
