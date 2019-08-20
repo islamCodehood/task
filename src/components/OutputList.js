@@ -2,9 +2,10 @@ import React from "react";
 import OutputItem from "./OutputItem";
 const OutputList = props => {
   return (
-    <ul>
+    <ul className="list">
       {props.itemsList.map(item => (
         <OutputItem
+          key={item.timestamp}
           title={item.title}
           link={item.link}
           summary={item.summary}
