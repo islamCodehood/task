@@ -9,18 +9,23 @@ class App extends Component {
     items: []
    }
 
-  addItem = (title, link, summary, timeStamp) => {
+  addItem = (title, link, summary, timestamp) => {
     const item = {
       title,
       link,
       summary,
-      timeStamp
+      timestamp
     }
     console.log(title, link, summary)
     this.setState(prevState => ({
       items: [item].concat(prevState.items)
     }))
   }
+
+  removeItem = timestamp => this.setState(prevState => ({
+    items: prevState.items.filter(item => item.timestamp !== timestamp)
+  }))
+  
   render() {
     return (
       <div className="App">
