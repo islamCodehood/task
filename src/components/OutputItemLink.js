@@ -2,7 +2,9 @@ import React from 'react';
 
 const OutputItemLink = props => {
     return ( 
-        <div></div>
+        <div>
+            <a href={props.value} target="_blank">READ MORE</a>
+        </div>
      );
 }
  
