@@ -9,11 +9,12 @@ class App extends Component {
     items: []
    }
 
-  addItem = (title, link, summary) => {
+  addItem = (title, link, summary, timeStamp) => {
     const item = {
       title,
       link,
-      summary
+      summary,
+      timeStamp
     }
     console.log(title, link, summary)
     this.setState(prevState => ({
@@ -25,7 +26,7 @@ class App extends Component {
       <div className="App">
         <Header />
         <Form addItem={this.addItem} />
-        <OutputList itemsList={this.state.items} />
+        <OutputList itemsList={this.state.items} removeItem={this.removeItem} />
       </div>
     );
   }
