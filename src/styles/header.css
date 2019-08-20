@@ -1,0 +1,115 @@
+/* header {
+
+}*/
+
+header h1 {
+    margin: 0;
+    /* font-style: italic; */
+}
+
+.hero-img {
+    height: 40vh;
+    width: 100%;
+    background-image: url("../img/city.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.nav-wrapper {
+    display: none;
+}
+
+.burger-icon {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.top {
+    height: 3px;
+    width: 24px;
+    background: #000;
+    margin-bottom: 3px;
+}
+
+.middle {
+    height: 3px;
+    width: 24px;
+    background: #000;
+    margin-bottom: 3px;
+}
+
+.bottom {
+    height: 3px;
+    width: 24px;
+    background: #000;
+    margin-bottom: 3px;
+}
+
+.side-nav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #222;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 30px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+nav a {
+    display: block;
+    color: #fff;
+    margin-bottom: 24px;
+    /* padding: 8px 24px; */
+    text-decoration: none;
+    position: relative;
+}
+
+nav ul  {
+    margin-top: 50px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 32px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+
+.close-btn:hover,
+.burger-icon:hover {
+    cursor: pointer;
+}
+
+.active {
+    border-bottom: 2px solid green;
+}
+
+#logo {
+    transform: skew(-20deg);
+    background: green;
+    padding: 10px 20px;
+    z-index: 1000;
+    color: #fff;
+}
+

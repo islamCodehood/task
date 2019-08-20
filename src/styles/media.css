@@ -1,0 +1,91 @@
+
+
+@media screen and (min-width: 768px) {
+    
+    .hero-img {
+        height: 45vh;
+    } 
+    .burger-icon {
+        display: none;  
+    }
+    .nav-wrapper {    
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        position: relative;
+        background-color: #fff;
+    }
+    
+    nav li {
+        float: left;
+        position: relative;
+        padding: 8px 8px;
+    }
+
+    nav li a {
+        display: block;
+        color: #222;
+        text-align: center; 
+        text-decoration: none;
+        margin-bottom: 0;
+    }
+    form {
+        display: flex;
+       flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 50px;
+        height: 40vh;
+    }
+
+    .input-wrapper {
+        position: relative;
+        margin-bottom: 30px;
+        /* width: 50%; */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .input-col {
+        width: 33%;
+        text-align: center;
+    }
+
+    .list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center; 
+    }
+    .list-item {
+        width: 33%;
+    }
+    #carousel {
+        position: absolute;
+        top: 40%;
+        left: 75%;
+        background: rgba(68, 68, 68, 0.801);
+        transform: skew(-20deg);       
+         width: 480px;
+        height: 180px;
+        padding: 20px;
+        color: #fff;
+    }
+    #carousel span {
+        font-weight: 700;
+    }
+    
+}
+
+@media screen and (min-width: 922px) {
+    
+}

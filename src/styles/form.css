@@ -1,0 +1,79 @@
+form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+
+
+/* .input-wrapper {
+    position: relative;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+} */
+.input-style {
+     outline: none;
+    border: 0;
+    border-bottom: 1px solid #222;
+    width: 250px;
+}
+
+/* .input-wrapper::before {
+    content: "";
+    position: absolute;
+    top: 105%;
+    left: 0;
+    height: 2px;
+    width: 30px;
+    background: green;
+}
+
+.input-wrapper::after {
+    content: "";
+    position: absolute;
+    top: 107%;
+    left: 20px;
+    height: 1px;
+    width: 220px;
+    background: #999;
+} */
+
+.input-col {
+    width: 100%;
+    text-align: center;
+}
+
+#summary-input {
+    height: 80px;
+}
+
+.input-wrapper {
+    margin-bottom: 20px;
+}
+
+textarea {
+    resize: none;
+ } 
+
+#add-btn {
+    border: none;
+    clip-path: polygon(25% 0%, 100% 0%, 74% 100%, 0 100%);
+    background: green;
+    padding: 10px 20px;
+    color: #fff;
+}
+
+
+#add-btn:focus {
+    outline: none;
+}
+
+#add-btn:hover {
+    cursor: pointer;
+}
