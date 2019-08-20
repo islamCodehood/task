@@ -2,7 +2,9 @@ import React from 'react';
 
 const OutputItemSummary = props => {
     return ( 
-       <div></div>
+       <div>
+         <p>{props.value}</p>
+       </div>
      );
 }
  
