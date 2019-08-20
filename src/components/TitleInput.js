@@ -1,14 +1,24 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
 class TitleInput extends Component {
-    state = {  }
-    render() { 
-        return ( 
-            <div>
-                
-            </div>
-         );
-    }
+  state = {};
+  handleChange = e => {
+      this.props.updateTitle(e.target.value)
+      console.log(e.target.value)
+  }
+  render() {
+    return (
+      <div>
+        <input
+          type="text"
+          id="title-input"
+          placeholder="Title"
+          onChange={this.handleChange}
+          required
+        />
+      </div>
+    );
+  }
 }
- 
+
 export default TitleInput;
