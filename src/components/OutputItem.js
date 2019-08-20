@@ -6,7 +6,7 @@ const OutputItem = props => {
 
         return ( 
                 <li>
-                    <OutputItemTitle value={props.title} removeItem={props.removeItem}  />
+                    <OutputItemTitle value={props.title} removeItem={props.removeItem} timestamp={props.timestamp} />
                     <OutputItemSummary value={props.summary} />
                     <OutputItemLink value={props.link} />
                 </li>
