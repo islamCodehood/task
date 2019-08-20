@@ -1,7 +1,7 @@
 import React from 'react';
 
 const RemoveButton = props => {
-    const handleClick = () => props.removeItem()
+    const handleClick = () => props.removeItem(props.timestamp)
     return ( 
         <div>
             <button onClick={handleClick}>X</button>
