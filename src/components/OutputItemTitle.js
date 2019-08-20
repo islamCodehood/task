@@ -7,7 +7,7 @@ const OutputItemTitle = props => {
             <h2>
                 {props.value}
             </h2>
-            <RemoveButton removeItem={props.removeItem} />
+            <RemoveButton removeItem={props.removeItem} timestamp={props.timestamp} />
         </div>
      );
 }
