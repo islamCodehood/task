@@ -2,7 +2,9 @@ import React from 'react';
 
 const OutputItemTitle = props => {
     return ( 
-        <h2></h2>
+        <h2>
+            {props.value}
+        </h2>
      );
 }
  
