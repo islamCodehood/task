@@ -5,14 +5,27 @@ import OutputList from './components/OutputList'
 import './App.css';
 
 class App extends Component {
-  state = {  }
-  
+  state = { 
+    items: []
+   }
+
+  addItem = (title, link, summary) => {
+    const item = {
+      title,
+      link,
+      summary
+    }
+    console.log(title, link, summary)
+    this.setState(prevState => ({
+      items: [item].concat(prevState.items)
+    }))
+  }
   render() {
     return (
       <div className="App">
         <Header />
-        <Form />
-        <OutputList />
+        <Form addItem={this.addItem} />
+        <OutputList itemsList={this.state.items} />
       </div>
     );
   }
