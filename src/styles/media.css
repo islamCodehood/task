@@ -3,7 +3,7 @@
 @media screen and (min-width: 768px) {
     
     .hero-img {
-        height: 45vh;
+        height: 50vh;
     } 
     .burger-icon {
         display: none;  
@@ -89,5 +89,7 @@
 }
 
 @media screen and (min-width: 922px) {
-    
+    .hero-img {
+        height: 55vh;
+    } 
 }
