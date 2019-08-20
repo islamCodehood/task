@@ -1,18 +1,16 @@
-import React, { Component } from 'react';
+import React from 'react';
 import OutputItemTitle from './OutputItemTitle'
 import OutputItemLink from './OutputItemLink'
 import OutputItemSummary from './OutputItemSummary'
-class OutputItem extends Component {
-    state = {  }
-    render() { 
+const OutputItem = props => {
+
         return ( 
                 <li>
-                    <OutputItemTitle value={this.props.title} />
-                    <OutputItemLink value={this.props.link} />
-                    <OutputItemSummary value={this.props.summary} />
+                    <OutputItemTitle value={props.title} removeItem={props.removeItem}  />
+                    <OutputItemSummary value={props.summary} />
+                    <OutputItemLink value={props.link} />
                 </li>
          );
-    }
 }
  
 export default OutputItem;
