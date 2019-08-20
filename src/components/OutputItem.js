@@ -7,9 +7,9 @@ class OutputItem extends Component {
     render() { 
         return ( 
                 <li>
-                    <OutputItemTitle />
-                    <OutputItemLink />
-                    <OutputItemSummary />
+                    <OutputItemTitle value={this.props.title} />
+                    <OutputItemLink value={this.props.link} />
+                    <OutputItemSummary value={this.props.summary} />
                 </li>
          );
     }
