@@ -5,7 +5,7 @@ import BurgerIcon from './BurgerIcon'
 import SideNav from './SideNav'
 import Carousel from './Carousel'
 
-const HeroImg = props => {
+const HeroImg = () => {
     return ( 
         <div className="hero-img">
             <BurgerIcon />

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const BurgerIcon = props => {
+const BurgerIcon = () => {
     const openSideNav = () => {
         const sideNav = document.querySelector('.side-nav')
         sideNav.style.width = "100%";
