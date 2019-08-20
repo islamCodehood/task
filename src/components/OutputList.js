@@ -1,18 +1,15 @@
-import React, { Component } from 'react';
+import React from 'react';
 import OutputItem from './OutputItem'
-class OutputList extends Component {
-    state = {  }
-    render() { 
+const OutputList = props => {
         return ( 
             <ul>
                 {
-                    this.props.itemsList.map(item => (
-                        <OutputItem title={item.title} link={item.link} summary={item.summary} />
+                    props.itemsList.map(item => (
+                        <OutputItem title={item.title} link={item.link} summary={item.summary} removeItem={props.removeItem} />
                     ))
                 }
             </ul>
          );
-    }
 }
  
 export default OutputList;
