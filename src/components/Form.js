@@ -6,7 +6,8 @@ class Form extends Component {
     state = { 
         title: "",
         link: "",
-        summary: ""
+        summary: "",
+        timeStamp: null
      }
 
     addTitle = (title) => this.setState({
@@ -24,8 +25,16 @@ class Form extends Component {
         const title = this.state.title
         const link = this.state.link
         const summary = this.state.summary
-        this.props.addItem(title, link, summary)
+        const timeStamp = new Date().getTime()
+        this.addTimeStamp(timeStamp)
+        this.props.addItem(title, link, summary, timeStamp)
     }
+
+    addTimeStamp = timeStamp => this.setState({
+        timeStamp,
+    })
+
+
     render() { 
         
         return ( 
